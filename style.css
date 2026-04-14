@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: black;
+}
+
+header span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+nav {
+    background-color: #17a2b8;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hero {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px 100px 20px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.ubicacion {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.icono {
+    background-color: #ffc107;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.btn-hero {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contenedor {
+    background-color: white;
+    width: 75%;
+    margin: -60px auto 40px auto;
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.servicios-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.servicio {
+    width: 30%;
+    text-align: center;
+}
+
+.servicio h4 {
+    color: #17a2b8;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.circulo {
+    width: 70px;
+    height: 70px;
+    background-color: #ffc107;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.servicio p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.formulario {
+    background-color: #6c757d;
+    width: 65%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.aviso {
+    color: #ffc107;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fila .campo {
+    width: 48%;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-enviar {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.formulario::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    padding-bottom: 20px;
+}
