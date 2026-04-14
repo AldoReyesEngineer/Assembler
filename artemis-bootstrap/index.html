@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión Artemis II | Regreso a la Luna</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Estilos personalizados para complementar Bootstrap */
+        :root {
+            --dorado: #D4AF37;
+            --fondo-oscuro: #0b0c10;
+            --carta-bg: #1c1f26;
+        }
+        
+        body {
+            background-color: var(--fondo-oscuro);
+            color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .text-dorado {
+            color: var(--dorado) !important;
+        }
+
+        .bg-dorado {
+            background-color: var(--dorado);
+            color: #000;
+        }
+
+        .bg-dorado:hover {
+            background-color: #b5952f;
+            color: #000;
+        }
+
+        /* Sección Hero con imagen de fondo */
+        .hero {
+            background: linear-gradient(rgba(11, 12, 16, 0.7), rgba(11, 12, 16, 0.9)), 
+                        url('https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1920&auto=format&fit=crop') no-repeat center center/cover;
+            height: 70vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-custom {
+            background-color: var(--carta-bg);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-5px);
+            border-color: var(--dorado);
+        }
+
+        footer {
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute w-100 z-3 pt-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-dorado fs-3" href="#">ARTEMIS II</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mision">La Misión</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tripulacion">Tripulación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnología</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-1 fw-bold text-white mb-3">El próximo gran salto de la <span class="text-dorado">Humanidad</span></h1>
+                    <p class="lead text-light mb-4">La primera misión tripulada a la Luna en más de 50 años. Un viaje de 10 días para probar los sistemas de soporte vital y sentar las bases de la exploración en el espacio profundo.</p>
+                    <a href="#mision" class="btn bg-dorado btn-lg px-4 py-2 fw-bold rounded-pill">Descubrir más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Sección: Detalles de la misión -->
+        <section id="mision" class="py-5">
+            <div class="container py-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h2 class="fw-bold text-dorado mb-3">Objetivo de la Misión</h2>
+                        <p class="fs-5">Artemis II enviará a cuatro astronautas en la nave espacial Orion. No aterrizarán en la Luna, sino que realizarán un sobrevuelo lunar para confirmar que todos los sistemas de la nave funcionan correctamente con humanos a bordo en el entorno del espacio profundo.</p>
+                        <ul class="list-unstyled mt-4">
+                            <li class="mb-2">🚀 <strong>Duración:</strong> Aproximadamente 10 días.</li>
+                            <li class="mb-2">🌍 <strong>Distancia máxima:</strong> 10,300 km más allá del lado oculto de la Luna.</li>
+                            <li class="mb-2">🎯 <strong>Meta:</strong> Preparar el terreno para Artemis III (aterrizaje lunar).</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                            <path d="M2 12h20"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Tripulación -->
+        <section id="tripulacion" class="py-5 bg-black">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-dorado">La Tripulación</h2>
+                    <p class="text-secondary">Los cuatro astronautas que harán historia.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Astronauta 1 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card card-custom h-100 p-3 text-center rounded-4">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold text-white">Reid Wiseman</h4>
+                                <h6 class="text-dorado mb-3">Comandante</h6>
+                                <p class="card-text text-secondary small">Astronauta de la NASA, responsable de liderar la misión y las decisiones críticas a bordo de la nave Orion.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Astronauta 2 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card card-custom h-100 p-3 text-center rounded-4">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold text-white">Victor Glover</h4>
+                                <h6 class="text-dorado mb-3">Piloto</h6>
+                                <p class="card-text text-secondary small">Astronauta de la NASA, será el primero en pilotar la Orion en el espacio profundo guiándola alrededor de la Luna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Astronauta 3 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card card-custom h-100 p-3 text-center rounded-4">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold text-white">Christina Koch</h4>
+                                <h6 class="text-dorado mb-3">Especialista de Misión</h6>
+                                <p class="card-text text-secondary small">Ingeniera y astronauta de la NASA. Posee el récord del vuelo espacial individual más largo realizado por una mujer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Astronauta 4 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card card-custom h-100 p-3 text-center rounded-4">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold text-white">Jeremy Hansen</h4>
+                                <h6 class="text-dorado mb-3">Especialista de Misión</h6>
+                                <p class="card-text text-secondary small">Astronauta de la Agencia Espacial Canadiense (CSA). Primer canadiense en viajar a la órbita lunar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Tecnología (Rocket & Capsule) -->
+        <section id="tecnologia" class="py-5">
+            <div class="container py-4 text-center">
+                <h2 class="fw-bold text-dorado mb-5">Tecnología Principal</h2>
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-5">
+                        <div class="p-4 border border-secondary rounded-4 bg-dark h-100">
+                            <h3 class="text-white">Cohete SLS</h3>
+                            <p class="text-secondary mt-3">El Space Launch System (SLS) es el cohete más potente jamás construido por la NASA, diseñado para enviar carga y tripulación directamente al espacio profundo en un solo lanzamiento.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="p-4 border border-secondary rounded-4 bg-dark h-100">
+                            <h3 class="text-white">Nave Orion</h3>
+                            <p class="text-secondary mt-3">La cápsula espacial que servirá como hogar para los astronautas. Cuenta con sistemas avanzados de soporte vital, navegación y un escudo térmico capaz de soportar el reingreso a la Tierra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-center py-4 mt-5">
+        <div class="container">
+            <h4 class="text-dorado fw-bold">ARTEMIS II</h4>
+            <p class="text-secondary small mb-0">&copy; 2026 Aldo Gerardo Reyes Miguel. Todos los derechos reservados.</p>
+            <p class="text-secondary small">Explorando las fronteras del desarrollo web y del espacio.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle con Popper (Para que el menú móvil funcione) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
